@@ -1,0 +1,10 @@
+# LGMVIP-WebDevelopment
+
+This Repository contains a collection of tasks provided by LetsGrowMore completed during Web Development Internship
+
+Task_1 : To Do list WebApp developed using HTML, CSS and Javascript
+
+Task_2 : This is basic Registration Form developed for Student to enroll Themselves . This form also shows the details of the Enrolled student. 
+         It is developed using HTML, CSS, Javascript
+
+Task_3 : Basic Calculator Developed using HTML, CSS, Javascript
