@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>REGISTRATION FORM</title>
+
+<body>
+    <header>
+        <h1>Student Enrollment Form</h1>
+    </header>
+    
+    <div class="row">
+        <div class="column1">
+            <form name='myform'>
+                <h3>Student Name : <input type="text" name='name' placeholder="Name" ></h3>
+                <h3>Email address : <input type="text" name='email' placeholder="Email" ></h3>
+                <h3>Institute Name : <input type="text" name='college' placeholder="College Name" ></h3>
+                <h3>Enrollment No : <input type="text" name='adm' placeholder="Enrollment No" ></h3>
+                <h3>Gender :   
+                    <input type="radio" name="Gender" id="Male" value="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" name="Gender" id="Female" value="Female">
+                    <label for="Female">Female</label>
+                    <input type="radio" name="Gender" id="Other" value="Other">
+                    <label for="Other">Other</label>
+                </h3>
+
+                <h3>Skills :    
+                    <input type="checkbox" id="myCheck1" value="html">HTML
+                    <input type="checkbox" id="myCheck2" value="css">CSS
+                    <input type="checkbox" id="myCheck3" value="javascript">Javascript
+
+                <h3>Select Image :    <input type='file' accept='image/*' onchange="readURL(this)"></h3>
+
+                <center><input type="submit" value="ENROLL" onclick="check();return false"> <input type="reset" value="RESET"></center>
+            </form>
+        </div>
+        <div class="column2">
+          <center>
+             <h1 style="margin-bottom:25px ;">Enrolled Student</h1>
+          </center>
+            
+            <table style="width:100%">
+                <tr>
+                    <th style="width:70%;  color:white;">Student Information</th>
+                    <th style="color:beige">Display Photo</th>
+
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Name</td>
+                                <td>
+                                    <div id="f1"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email id</td>
+                                <td>
+                                    <div id="f2"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>College</td>
+                                <td>
+                                    <div id="f3"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Enrollment No</td>
+                                <td>
+                                    <div id="f4"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Class</td>
+                                <td>
+                                    <div id="f5"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Skills</td>
+                                <td>
+                                    <div id="f6"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <td>
+                        <center> <img src="" alt="select_image" id="img" style='height:150px;'></center>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
